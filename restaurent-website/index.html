@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--    GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+
+
+    <!--    LINE AWESOME FOR ICON -->
+    <link rel="stylesheet"
+          href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <!--    STYLE CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Restaurent Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                colors: {
+                    white: '#ffffff',
+                    black: '#000000',
+                    primary: '#A6A182',
+                    gray: '#AEB0B4',
+                    green: '#A6A182',
+                    // light-gray: '#1F2120',
+                },
+                extend: {
+                    container: {
+                        center: true,
+                        padding: {
+                            DEFAULT: '1rem',
+                            sm: '4rem',
+                            lg: '6rem',
+                            xl: '7rem',
+                            '2xl': '8rem',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-black">
+
+<!--<div>-->
+
+<nav class="py-7 absolute w-full z-40 top-0 left-0">
+    <div class="container">
+        <div class="grid grid-cols-12 gap-4 items-center">
+            <div class="col-span-3">
+                <div>
+                    <img src="./assets/images/logo/logo.svg" alt="">
+                </div>
+            </div>
+            <div class="col-span-6">
+                <ul class="flex items-center justify-between text-white ">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-span-3">
+                <div class="flex items-center justify-end">
+                    <button class="bg-primary py-4 px-7  text-white rounded-full">Book A Table <i
+                            class="las la-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<main>
+    <section  class="bg-[url('./assets/images/hero-section/hero-bg.jpg')]">
+        <div class="h-screen relative flex items-center justify-center">
+            <div class="w-full h-full absolute top-0 left-0 bg-black opacity-60"></div>
+            <div class="container relative z-20">
+                <div class="grid grid-cols-12 gap-4 items-center pt-44">
+                    <div class="col-span-7 ">
+                        <div>
+                            <div class="text-sm mb-2.5 ml-2.5 text-primary"><h3>ART OF FINE DINING</h3></div>
+                            <div class="text-[68px] text-white font-extrabold"><h1>DINING REDEFINED WITH EVERY BITE</h1></div>
+                            <div class="text-base mt-2.5 mr-2.5 text-gray ">
+                                <p>Immerse yourself in a dining experience like no other, where every dish is a masterpiece of
+                                    flavor, crafted with care and precision. From the freshest ingredients.</p>
+                            </div>
+
+                            <div>
+                                <div class="flex items-center">
+                                    <div class="my-10">
+                                        <button class="bg-primary py-4 px-7  text-white rounded-full">Book A Table <i
+                                                class="las la-arrow-right"></i></button>
+                                    </div>
+                                    <div class="ml-10 text-primary "><p class="underline"><a href="#">Download Now <i
+                                            class="lab la-google-play"></i></a></p></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-span-5">
+                        <div class="relative mx-auto w-[444px] h-[752px]">
+                            <div class="absolute -right-16 top-24">
+                                <img class="border-8 border-white rounded-full"
+                                     src="assets/images/hero-section/hero-circle-img-2.jpg" alt="">
+                            </div>
+                            <img class="rounded-full" src="assets/images/hero-section/hero-img.jpg" alt="">
+                            <div class="absolute bottom-32 -left-[90px]">
+                                <img class="border-8 border-white rounded-full"
+                                     src="assets/images/hero-section/hero-circle-img-1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="bg-black">
+                <div>
+                    <div class="grid grid-cols-12 gap-4 place-items-center pt-[100px]">
+                        <div class="col-span-5">
+                            <div class="relative mx-auto w-[400px] h-[600px]">
+                                <img class="rounded-full"
+                                    src="assets/images/about-us/about-us-image.jpg" alt="">
+                                <div class="absolute -left-20 bottom-16">
+                                    <img class="rounded-full border-8 border-white" src="assets/images/about-us/about-us-img-2.jpg" alt="">
+                                </div>
+                                <div class="absolute -right-[38px] top-[130px] w-[130px] h-[118px] rounded-lg bg-primary">
+                                    <div class="text-white text-[16px] items-center pt-4 pl-4">
+                                        <div>
+                                            <i class=" text-[26px] las la-award"></i>
+                                        </div>
+                                        <div>
+                                            <h3>30+ years of experience</h3>
+                                        </div>
+                                        
+                                    </div>
+                                    <!-- <img class="rounded-lg  border-white" src="assets/images/about-us/about-us-img-2.jpg" alt=""> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-7 place-items-center justify-center ">
+                            <div>
+                                <div class="text-[14px] text-primary"><h3>ABOUT US</h3></div>
+                                <div class="text-[42px] text-white font-extrabold"><h1>OUR COMMITMENT TO AUTHENTICITY & EXCELLENCE</h1></div>
+                                <div class="text-[18px] font-normal text-gray "><p>Every dish we create is a celebration of connection, crafted with passion and inspired by diverse flavors. Join us in an inviting space where every bite sparks joy and every moment becomes a cherished memory.</p></div>
+                                <div class="text-[18px] font-normal text-gray my-6 ">
+                                    <p class="pb-[15px] "><i class="las la-check-circle"></i> Seasonal & locally sourced ingredients</p>
+                                    <p class="pb-[15px]"><i class="las la-check-circle"></i> Vegetarian & dietary-friendly options</p>
+                                    <p class="pb-[15px]"><i class="las la-check-circle"></i> Exquisite pairings & unique flavors</p>
+                                </div>
+
+                                <div>
+                                    <div class="flex items-center ">
+                                        <div class="pr-[15px]">
+                                            <button class="bg-primary py-4 px-7  text-white rounded-full text-[16px] h-[50px] w-[167px]">Order Now<i
+                                                    class="las la-arrow-right"></i></button>
+                                        </div>
+                                        <div>
+                                            <button class="bg-white py-4 px-7  text-black rounded-full text-[16px] h-[50px] w-[167px]">Read More<i
+                                                    class="las la-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="py-[200px] grid grid-cols-12 gap-4 items-center">
+                        <div class="col-span-4">
+                            <div class="flex items-center gap-4 text-white">
+                                <div><i class=" text-[40px] rounded-full border-2 p-2 text-primary las la-utensils"></i></div>
+                                <div>
+                                    <h3 class="text-[22px] font-[700]">Premium Dining</h3>
+                                    <p class="text-[18px] font-[400] text-gray">It's very personal, and can only be a positive experience.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-span-4">
+                            <div class="flex items-center gap-4 text-white">
+                                <div><i class=" text-[40px] rounded-full border-2 p-2 text-primary las la-hamburger"></i></div>
+                                <div>
+                                    <h3 class="text-[22px] font-[700]">Abundant flavors</h3>
+                                    <p class="text-[18px] font-[400] text-gray">At secret recipe, we take immense pride in crafting.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-4">
+                            <div class="flex items-center gap-4 text-white">
+                                <div><i class=" text-[40px] rounded-full border-2 p-2 text-primary las la-pizza-slice"></i></div>
+                                <div>
+                                    <h3 class="text-[22px] font-[700]">Indigenous meal</h3>
+                                    <p class="text-[18px] font-[400] text-gray">It's very personal, and can only be a positive experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN DISHES SECTION -->
+
+    <section class="bg-[#161a1d]">
+        <div class="container">
+            <div>
+
+                <!-- HEADINGS  -->
+                <div class="place-items-center justify-center py-[15px]">
+                    <h3 class="text-[14px] pb-[16px] text-primary pt-[35px]">OUR MAIN DISHES</h3>
+                    <h1 class="text-[42px] text-white font-[800] text-center">SATISFY YOUR CRAVINGS WITH OUR SIGNATURE MAINS</h1>
+                    
+                </div>
+                
+                <!-- PICTURES -->
+
+                <div>
+                    <div class="grid grid-cols-12 gap-[50px] place-items-center">
+                        <div class="col-span-3">
+                            <div>
+                                <div class="my-[40px]">
+                                    <img class="rounded-full h-[200px] w-[200px] ml-[50px]" src="assets\images\main-dish\our-dish-image-1.jpg" alt="">
+                                </div>
+                                <div class="place-items-center">
+                                    <h3 class="text-white text-[22px] mb-[20px] font-[700]">Soups</h3>
+                                    <p class="text-gray text-[18px] font-[400]">Warm, comforting, and full of flavor, our soups avre the perfect start to any meal.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-span-3">
+                            <div>
+                                <div class="my-[40px]"><img class="rounded-full h-[200px] w-[200px] ml-[40px]" src="assets\images\main-dish\our-dish-image-2.jpg" alt=""></div>
+                                <div class="place-items-center">
+                                    <h3 class="text-white text-[22px] mb-[20px] font-[700]">Salads</h3>
+                                    <p class="text-gray text-[18px] font-[400]">Refreshing, vibrant, and full of fresh flavors, our salads are crafted to senses.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-span-3">
+                            <div>
+                                <div class="my-[40px]"><img class="rounded-full h-[200px] w-[200px] ml-[50px]" src="assets\images\main-dish\our-dish-image-3.jpg" alt=""></div>
+                                <div class="place-items-center">
+                                    <h3 class="text-white text-[22px] mb-[20px] font-[700]">Main Dishes</h3>
+                                    <p class="text-gray text-[18px] font-[400]">Offering bold flavors and expertly crafted recipes that cater to every taste.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-span-3">
+                            <div>
+                                <div class="my-[40px]"><img class="rounded-full h-[200px] w-[200px] ml-[40px]" src="assets\images\main-dish\our-dish-image-4.jpg" alt=""></div>
+                                <div class="place-items-center">
+                                    <h3 class="text-white text-[22px] mb-[20px] font-[700]">Appetizers</h3>
+                                    <p class="text-gray text-[18px] font-[400]">Our appetizers are the perfect way to begin your dining experience flavors.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HUNGRY FOR SOMETHING -->
+
+                <div class="flex place-items-center justify-center gap-2 py-[100px]">
+                    <div class="text-white text-[18px] font-[400]"><h3>Hungry for Something Delicious? </h3></div>
+                    <div class="text-primary text-[18px] font-[400]"><p class="underline"><a href="#"> View All Dishes!</a></p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DAILY OFFERS SECTION -->
+
+    <section>
+        <div class="container">
+            <div class="grid grid-cols-12 gap-16 place-items-center py-[100px]">
+
+                <div class="col-span-5">
+                    <div class="relative h-[590px] w-[608px]"><img src="assets\images\daily-offer\daily-offer-image.png" alt="">
+                        <div class="absolute right-[28px] bottom-[30px] h-[250px] w-[222px] rounded-lg bg-primary">
+                            <div class="place-items-center py-[40px]">
+                                <div class="text-white text-[22px] font-[600]"><h3>Delicious Burger</h3></div>
+                                <div class="text-[orange]">
+                                    <i class="text-[20px] las la-star"></i>
+                                    <i class="text-[20px] las la-star"></i>
+                                    <i class="text-[20px] las la-star"></i>
+                                    <i class="text-[20px] las la-star"></i>
+                                    <i class="text-[20px] las la-star"></i>
+                                </div>
+                                <div>
+                                    <p class="text-white text-[14px] font-[600]"><i class="las la-check-circle"></i> Tomato Sauces</p>
+                                    <p class="text-white text-[14px] font-[600]"><i class="las la-check-circle"></i> Vegetables</p>
+                                    <p class="text-white text-[14px] font-[600]"><i class="las la-check-circle"></i> Lettuce</p>
+                                    <p class="text-white text-[14px] font-[600]"><i class="las la-check-circle"></i> Cheese Slice</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                    
+                    </div>
+                    
+                </div>
+                <div class="col-span-7 place-items-center">
+                    <div>
+                        <div class="text-[14px] text-primary"><h3>OUR DAILY OFFERS</h3></div>
+                        <div class="text-[42px] text-white font-extrabold"><h1>TASTE THE SAVINGS WITH OUR DAILY SPECIALS</h1></div>
+                        <div class="text-[18px] font-normal text-gray "><p>Every day is an opportunity to enjoy your favorites at a discounted price. Explore our daily rotating specials and indulge in flavorful meals at a fraction of the cost.</p></div>
+                        <div class="text-[18px] font-normal text-gray my-6 ">
+                            <p class="pb-[15px] "><i class="las la-check-circle"></i> Seasonal & Locally Sourced Ingredients</p>
+                            <p class="pb-[15px]"><i class="las la-check-circle"></i> Vegetarian & Dietary-Friendly Options</p>
+                            <p class="pb-[15px]"><i class="las la-check-circle"></i> Exquisite Pairings & Unique Flavors</p>
+                        </div>
+
+                        <div>
+                            <div class="flex place-items-center ">
+                                <div class="pr-[15px]">
+                                    <button class="bg-primary py-4 px-7  text-white rounded-full text-[16px] h-[50px] w-[167px]">Book Table<i
+                                            class="las la-arrow-right"></i></button>
+                                </div>
+                                <div>
+                                    
+                                    <button class="bg-white py-4 px-7  text-black rounded-full text-[16px] h-[50px] w-[188px]">Explore Menu<i
+                                                class="las la-arrow-right"></i></button>        
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MENU -->
+
+    <section class="bg-[#161a1d]">
+        <div class="container">
+            <div class="place-items-center justify-center text-center pt-[50px]">
+                <div class="text-[14px] text-primary font-[600]"><h3>FROM OUR MENU</h3></div>
+                <div class="text-[42px] text-white font-extrabold"><h1>AN INSPIRED MENU THAT BLENDS TRADITION</h1></div>
+            </div>
+            <div class="py-[50px] place-items-center justify-center">
+                <div class="w-[570px] h-[60px] bg-gray rounded-full ">
+                    <div class="flex justify-between p-3">
+                        <p class="text-[18px] text-primary font-[400]">Appetizers</p>
+                        <p class="text-[18px] text-white font-[400]">Main Courses</p>
+                        <p class="text-[18px] text-white font-[400]">Sides</p>
+                        <p class="text-[18px] text-white font-[400]">Desserts</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-12 gap-4 items-center">
+                <div class="col-span-6">
+                    <div>
+                        <div class="flex place-items-center gap-4 pb-[20px]">
+                            <div><img src="assets\images\menu\our-menu-image-1.png" alt=""></div>
+                            <div>
+                                <h3 class="text-[20px] text-white font-[600]">CHIPS & DIP</h3>
+                                <p class="text-[18px] text-gray">A perfect pairing of crispy, freshly made chips and rich, flavorful dips that bring a burst of taste in every bite.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex place-items-center gap-4 pb-[20px]">
+                            <div><img src="assets\images\menu\our-menu-image-2.png" alt=""></div>
+                            <div>
+                                <h3 class="text-[20px] text-white font-[600]">GARLIC FRIES</h3>
+                                <p class="text-[18px] text-gray">A perfect pairing of crispy, freshly made chips and rich, flavorful dips that bring a burst of taste in every bite.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex place-items-center gap-4 pb-[20px]">
+                            <div><img src="assets\images\menu\our-menu-image-3.png" alt=""></div>
+                            <div>
+                                <h3 class="text-[20px] text-white font-[600]">KALE SALAD</h3>
+                                <p class="text-[18px] text-gray">A perfect pairing of crispy, freshly made chips and rich, flavorful dips that bring a burst of taste in every bite.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-6">
+                    <div>
+                        <div class="flex place-items-center gap-4 pb-[20px]">
+                            <div><img src="assets\images\menu\our-menu-image-4.png" alt=""></div>
+                            <div>
+                                <h3 class="text-[20px] text-white font-[600]">CAPRESE SALAD</h3>
+                                <p class="text-[18px] text-gray">A perfect pairing of crispy, freshly made chips and rich, flavorful dips that bring a burst of taste in every bite.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex place-items-center gap-4 pb-[20px]">
+                            <div><img src="assets\images\menu\our-menu-image-5.png" alt=""></div>
+                            <div>
+                                <h3 class="text-[20px] text-white font-[600]">TORTILLA SOUP</h3>
+                                <p class="text-[18px] text-gray">A perfect pairing of crispy, freshly made chips and rich, flavorful dips that bring a burst of taste in every bite.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex place-items-center gap-4 pb-[20px]">
+                            <div><img src="assets\images\menu\our-menu-image-6.png" alt=""></div>
+                            <div>
+                                <h3 class="text-[20px] text-white font-[600]">THAI CURRY</h3>
+                                <p class="text-[18px] text-gray">A perfect pairing of crispy, freshly made chips and rich, flavorful dips that bring a burst of taste in every bite.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex place-items-center justify-center gap-2 py-[100px]">
+                <div class="text-white text-[18px] font-[400]"><h3>Ready to Savor the Best? </h3></div>
+                <div class="text-primary text-[18px] font-[400]"><p class="underline"><a href="#"> Check Our Dishes!</a></p></div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- VIDEO SECTION -->
+
+    <section>
+        <video class="h-full w-full rounded-lg" controls autoPlay muted>
+            <source src="assets\video\spicyhunt-intro-bg-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+    </section>
+
+    <!-- INGREDIENTS SECTION -->
+
+    <section class="bg-[#161a1d]">
+        <div class="container">
+            <div class="grid grid-cols-12 gap-16 place-items-center py-[100px]">
+
+                <div class="col-span-5">
+                    <div class="relative h-[590px] w-[615px]"><img src="assets\images\ingredients\our-ingredients-image.png" alt="">
+                        <div class="absolute left-[28px] bottom-[15px] h-[175px] w-[230px] rounded-lg bg-primary">
+                            <div class="place-items-center py-[40px]">
+                                <div class="text-white font-[600]">
+                                    <h3 class="text-[22px] ">620+ Exclusive</h3>
+                                    <p class="text-[18px] ">Happy Customer</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                    
+                    </div>
+                    
+                </div>
+                <div class="col-span-7 place-items-center">
+                    <div>
+                        <div class="text-[14px] text-primary"><h3>OUR INGREDIENTS</h3></div>
+                        <div class="text-[42px] text-white font-extrabold"><h1>CRAFTING DISHES WITH FRESHEST FLAVORS</h1></div>
+                        <div class="text-[18px] font-normal text-gray "><p>We take pride in using only the freshest, hand-picked ingredients that are free from preservatives and artificial additives. Taste the difference with every bite as we serve dishes made from nature's finest.</p></div>
+                        <div class="text-[20px] font-normal text-white flex items-center justify-between my-6">
+                            <div>
+                                <div class="justify-center place-items-center text-[22px]">
+                                    <i class="las la-check-circle"></i>
+                                    <h3 class="font-[700]">Best Qualities</h3>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="justify-center place-items-center text-[22px]">
+                                    <i class="las la-check-circle"></i>
+                                    <h3 class="font-[700]">Discount System</h3>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="justify-center place-items-center text-[22px]">
+                                    <i class="las la-check-circle"></i>
+                                    <h3 class="font-[700]">First Delivery</h3>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <button class="bg-primary py-4 px-7  text-white rounded-full text-[16px] h-[50px] w-[167px]">Book Table<i
+                                    class="las la-arrow-right"></i></button>
+                        </div>       
+                    </div>
+                </div>
+            </div>
+
+            <hr class="w-full h-1 bg-white my-[50px]">
+
+
+            <div class="grid grid-cols-12 gap-4 items-center text-white pb-[100px]">
+                <div class="col-span-3">
+                    <div class="flex items-center gap-4">
+                        <div><i class="text-[42px] las la-check-circle"></i></div>
+                        <div>
+                            <h2 class="text-[42px] text-white font-extrabold">309</h2>
+                            <p class="text-[18px] text-gray font-[400]">Professional Chefs</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-3">
+                    <div class="flex items-center gap-4">
+                        <div><i class="text-[38px] las la-check-circle"></i></div>
+                        <div>
+                            <h2 class="text-[42px] text-white font-extrabold">453</h2>
+                            <p class="text-[18px] text-gray font-[400]">Items Of Food</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-3">
+                    <div class="flex items-center gap-4">
+                        <div><i class="text-[38px] las la-check-circle"></i></div>
+                        <div>
+                            <h2 class="text-[42px] text-white font-extrabold">25+</h2>
+                            <p class="text-[18px] text-gray font-[400]">Years Of Experience</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-3">
+                    <div class="flex items-center gap-4">
+                        <div><i class="text-[38px] las la-check-circle"></i></div>
+                        <div>
+                            <h2 class="text-[38px] text-white font-[800]">300+</h2>
+                            <p class="text-[18px] text-gray font-[400]">Satisfied Clients</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+
+    <section  class="bg-[url('./assets/images/testimonials/testimonials-bg.jpg')]">
+        <div class="container">
+            <div>
+                <!-- HEADINGS  -->
+                <div class="place-items-center py-[100px] font-[400]">
+                    <h3 class="text-[14px] pb-[16px] text-primary">OUR TESTIMONIALS</h3>
+                    <h1 class="text-[42px] text-white font-[600] text-center py-[10px]">REAL STORIES OF MEMORABLE MEALS AND EXPERIENCES</h1>
+                    <p class="text-[28px] text-gray text-center py-[40px]">From the moment we walked in, the ambiance was welcoming, and the service was top-notch. The dish was absolutely delicious, full of fresh flavors, and perfectly cooked. I especially loved how the staff took the time to explain the menu and suggest pairings for our meal.</p>
+                    <div>
+                        <img class="h-[80px] w-[80px] rounded-full my-4" src="assets\images\testimonials\author-1.jpg" alt="author-1">
+                    </div>
+                    <div><p class="text-[20px] text-primary font-[400]">Wade L Warren, Developer</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LATEST BLOG SECTION -->
+
+    <section>
+        <div class="container">
+            <div>
+                <div class="place-items-center py-[100px]">
+                    <h3 class="text-[14px] pb-[16px] text-primary pt-[35px]">LATEST BLOG</h3>
+                    <h1 class="text-[42px] text-white font-[600] text-center pb-[50px]">EXPLORE OUR LATEST NEWS AND UPDATES</h1>
+                </div>
+                <div>
+                    <div class="grid grid-cols-12 place-items-center gap-4">
+                        <div class="col-span-4">
+                            <img class="rounded-lg h-[310px] w-[403px]" src="assets\images\blogs\post-1.jpg" alt="">
+                            <h3 class="text-[22px] text-white font-[700] my-4">5 Tips for Perfecting Your Home Dining Experience</h3>
+                            <div class="text-[18px] text-primary pt-[10px] pb-[50px]">Read More<i class="las la-arrow-right"></i></div>
+                        </div>
+                        <div class="col-span-4">
+                            <img class="rounded-lg h-[310px] w-[403px]" src="assets\images\blogs\post-2.jpg" alt="">
+                            <h3 class="text-[22px] text-white font-[700] my-4">Why Locally Sourced Ingredients Make a Difference</h3>
+                            <div class="text-[18px] text-primary pt-[10px] pb-[50px]">Read More<i class="las la-arrow-right"></i></div>
+                            
+                        </div>
+                        <div class="col-span-4">
+                            <img class="rounded-lg h-[310px] w-[403px]" src="assets\images\blogs\post-3.jpg" alt="">
+                            <h3 class="text-[22px] text-white font-[700] my-4">Creating Memorable Dining Moments with Friends</h3>
+                            <div class="text-[18px] text-primary pt-[10px] pb-[50px]">Read More<i class="las la-arrow-right"></i></div>
+                        </div>
+
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
+
+    <!-- RESERVE TABLE SECTION -->
+
+    <section class="bg-[#161a1d]">
+        <div class="container">
+            <div class="pt-[100px]">
+                <div class="grid grid-cols-12 gap-8">
+                    <div class="col-span-6">
+                        <div class="items-center py-[15px]">
+                            <div>
+                                <h3 class="text-[14px] pb-[16px] text-primary">RESERVE A TABLE</h3>
+                                <h1 class="text-[42px] text-white font-[600] pb-[40px]">RESERVE NOW YOUR TABLE AND ENJOY DINNING EXPERIENCE</h1>
+                            </div>
+                            <p class="text-white text-[20px] font-[800] pb-[4px]">Open Hours</p>
+                            <div class="flex place-items-center gap-4">
+                                <div>
+
+                                    <p class="text-gray text-[18px] font-[400] pb-[4px]">Mon - Thu</p>
+                                    <p class="text-gray text-[18px] font-[400] pb-[4px]">Fri - Sat</p>
+                                    <p class="text-gray text-[18px] font-[400] pb-[4px]">Sun</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray text-[18px] font-[400] pb-[4px]">10:00AM - 09:00PM</p>
+                                    <p class="text-gray text-[18px] font-[400] pb-[4px]">09:00AM - 10:00PM</p>
+                                    <p class="text-gray text-[18px] font-[400] pb-[4px]">Closed</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- FORM -->
+
+                    <div class="col-span-6 ">
+                        <div class="bg-white w-[620px] h-[540px] rounded-lg">
+                            <div class="items-center justify-center py-[80px]">
+                                <form class="px-[50px]">
+                                    <div class="mb-5">
+                                        <label for="name" class="block mb-2 text-[16px font-[400] text-black">Your Name</label>
+                                        <input type="name" id="name" class="border border-black text-sm rounded-lg w-full p-2.5  text-black w-[540px] h-[54px] " placeholder="e.g. John" required />
+                                    </div>
+                                    <div class="mb-5">
+                                        <div class="flex items-center">
+                                            <div class="mr-[40px]">
+                                                <label for="email" class="block mb-2 text-[16px] font-[400] text-black">Email Address</label>
+                                                <input type="email" id="email" class="border border-black text-sm rounded-lg w-full p-2.5 text-black w-[255px] h-[54px]" placeholder="e.g. John@example.com" required />
+                                            </div>
+
+                                            <div>
+                                                <label for="phone" class="block mb-2 text-[16px] font-[400] text-black">Phone Number</label>
+                                                <input type="phone" id="phone" class="border border-black text-sm rounded-lg w-full p-2.5 text-black w-[255px] h-[54px] " placeholder="e.g. +123 456 7892" required />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-5">
+                                        <div class="flex items-center gap-4">
+                                            <div>
+                                                <label for="date" class="block mb-2 text-[16px] font-[400] text-black ">Date</label>
+                                                <input type="date" id="date" class="border border-black text-sm rounded-lg w-full p-2.5 text-black w-[160px] h-[54px] " placeholder="e.g. mm/dd/yyyy" required />
+                                            </div>
+
+                                            <div>
+                                                <label for="time" class="block mb-2 text-[16px] font-[400] text-black">Time</label>
+                                                <input type="time" id="time" class="border border-black text-sm rounded-lg w-full p-2.5 text-black w-[160px] h-[54px] " placeholder="e.g. Select time" required />
+                                            </div>
+
+                                            <div>
+                                                <label for="person" class="block mb-2 text-[16px] font-[400] text-black">Number of Person</label>
+<!--                                                <input type="person" id="person" class="border border-black text-sm rounded-lg w-full p-2.5 text-black " placeholder="e.g. number of person" required />-->
+                                                <select id="person" class="border border-black text-sm rounded-lg w-full p-2.5 text-black w-[160px] h-[54px] ">
+                                                    <option>number of person</option>
+                                                    <option>1 person</option>
+                                                    <option>5 person</option>
+                                                    <option>15 person</option>
+                                                    <option>20 person</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <button class="bg-primary justify-center text-white rounded-full h-[40px] w-full text-[16px]">Reserve Now</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<footer>
+    <section>
+        <div class="container">
+            <div class="py-[80px]">
+                <img src="./assets/images/logo/logo.svg" alt="">
+                <p class="text-gray text-[18px] pt-[20px]"><i class="las la-map-marker"></i> 4517 Washington Ave, Kentucky 39495</p>
+                <p class="text-gray text-[18px] pt-[20px]"><i class="las la-phone"></i> +01 780 859 632</p>
+            </div>
+            <div class="grid grid-cols-12">
+                <div class="col-span-4">
+                    <i class="text-white text-[40px] mr-4 border-white border-2 rounded-full lab la-twitter"></i>
+                    <i class="text-white text-[40px] mr-4 border-white border-2 rounded-full  lab la-facebook-f"></i>
+                    <i class="text-white text-[40px] mr-4 border-white border-2 rounded-full  lab la-instagram"></i>
+                </div>
+                <div class="col-span-8 items-center justify-end">
+                    <p class="text-gray text-[18px] items-center justify-end">Copyright © 2025 All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</footer>
+</body>
+</html>
